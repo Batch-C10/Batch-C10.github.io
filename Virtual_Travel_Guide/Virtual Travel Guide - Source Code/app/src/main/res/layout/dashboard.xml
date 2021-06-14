@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#d7d6d6"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/pen_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:background="@color/teal_200">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight=".1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#fff"
+                android:background="@drawable/ic_baseline_menu_24"
+                android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/currdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+
+                android:textStyle="bold"
+                android:fontFamily="@font/segoueui"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:id="@+id/restaurents"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#fff"
+                android:background="@drawable/sun"
+                android:layout_height="25dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/edtSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+             android:textColorHint="#000"
+            android:drawablePadding="5dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="SEARCH"
+            android:textColor="#000"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="14dp"
+             />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:paddingTop="5dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="5dp"  />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right" 
+        android:gravity="right">
+
+         <LinearLayout
+             android:id="@+id/wrongappro"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginBottom="3dp"
+             android:layout_marginRight="14dp"
+             android:visibility="gone"
+             android:gravity="center"
+             android:orientation="vertical" >
+       
+           <Button
+               android:id="@+id/btnDone"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:text=""
+               android:textColor="#ff0000"
+               android:gravity="center"
+               android:textSize="16dp"
+               android:textStyle="bold"
+               android:layout_gravity="center"
+               />
+
+      
+    </LinearLayout>
+        
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_gravity="right|bottom"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_mark_chat_unread_24"
+        android:id="@+id/fab"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"/>
+
+     
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
