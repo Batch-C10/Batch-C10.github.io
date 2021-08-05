@@ -30,6 +30,10 @@
         <activity android:name=".Viewfulldesc"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
         <activity android:name=".Webview"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 

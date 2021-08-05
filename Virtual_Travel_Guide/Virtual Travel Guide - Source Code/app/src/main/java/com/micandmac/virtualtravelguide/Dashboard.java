@@ -116,7 +116,7 @@ Dashboard extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent i=new Intent(getApplicationContext(),Webview.class);
+                Intent i=new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
 
             }
